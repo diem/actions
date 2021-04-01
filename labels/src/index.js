@@ -3,7 +3,7 @@ const github = require("@actions/github");
 const got = require("got");
 const process = require("process");
 
-const hyperjump_url = "http://github.aws.hlw3truzy4ls.com:6080/hyperjump/jump";
+const hyperjump_url = "https://github.aws.hlw3truzy4ls.com:1443/hyperjump/jump";
 
 async function main() {
   try {
