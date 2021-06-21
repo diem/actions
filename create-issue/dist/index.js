@@ -4324,8 +4324,7 @@ async function main() {
     if (existing_issues) {
       existing = existing_issues.data.items.find(issue => issue.title === title);
     }
-
-    const owner = github.context.payload.repository.owner.login;
+    const owner = github.context.payload.repository.organization;
     const repo = github.context.payload.repository.name;
     if (existing) {
       // update in place
